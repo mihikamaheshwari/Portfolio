@@ -20,71 +20,83 @@
 <body>
 
 <header>
-  <div class="container header-flex">
-    <div class="branding">
-      <h1>Mihika<span>.</span></h1>
-      <p>Full-Stack Developer</p>
-    </div>
-
+  <div class="container nav">
+    <h1>Mihika<span>.</span></h1>
     <nav>
       <a href="#projects">Projects</a>
-      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
+<!-- HERO / ABOUT -->
 <section class="hero">
-  <div class="container">
-    <h2>Building <span>Real Systems</span>, Not Just Assignments.</h2>
-    <p>Web • Machine Learning • Automation • Databases</p>
+  <div class="container hero-flex">
+
+    <div class="hero-text">
+      <h2 class="slide-in">Hi, I’m <span>Mihika</span></h2>
+      <p class="fade-in delay1">
+        Full-stack developer focused on building real-world systems using
+        web technologies, automation, databases, and machine learning.
+      </p>
+
+      <p class="fade-in delay2 skills">
+        React • JavaScript • Node.js • SQL • MongoDB • Python • ML • n8n
+      </p>
+    </div>
+
+    <div class="hero-img float">
+      <img src="https://csrggsoyrkaqprmxxqrq.supabase.co/storage/v1/object/public/image1/PES1UG23CS359.png" alt="Mihika Maheshwari">
+    </div>
+
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="section">
   <div class="container">
     <h2 class="section-title">Projects</h2>
 
     <div class="grid">
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="">
+      <div class="card stagger">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
         <div class="card-body">
           <h3>Financial Care Platform</h3>
-          <p>Full-stack investment platform simplifying mutual fund access.</p>
-          <a href="https://financialcare.vercel.app/" target="_blank">View Live →</a>
+          <p>Full-stack platform simplifying mutual fund investments.</p>
+          <a href="https://financialcare.vercel.app/" target="_blank">Live Demo →</a>
         </div>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="">
+      <div class="card stagger">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
         <div class="card-body">
           <h3>Phishing URL Detection</h3>
-          <p>Bi-LSTM based ML system detecting malicious URLs.</p>
+          <p>Bi-LSTM model detecting malicious URLs without opening them.</p>
         </div>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+      <div class="card stagger">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
         <div class="card-body">
           <h3>Hotel Booking System</h3>
-          <p>DBMS project managing rooms, bookings & customers.</p>
+          <p>DBMS-based room booking and customer management system.</p>
         </div>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+      <div class="card stagger">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
         <div class="card-body">
           <h3>In-Memory Cache System</h3>
           <p>OOAD-based LRU cache with modular architecture.</p>
         </div>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+      <div class="card stagger">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
         <div class="card-body">
           <h3>LMS Automation</h3>
-          <p>Automated Google Drive → Tutor LMS sync using n8n.</p>
+          <p>Automated Google Drive → Tutor LMS workflow using n8n.</p>
         </div>
       </div>
 
@@ -92,28 +104,9 @@
   </div>
 </section>
 
-<section id="about" class="section light">
-  <div class="container about-flex">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="profile">
-
-    <div>
-      <h2>About Me</h2>
-      <p>
-        I am a full-stack developer who enjoys building scalable systems
-        involving web technologies, automation, databases, and machine learning.
-        I focus on clean architecture and real-world usability.
-      </p>
-
-      <h3>Skills</h3>
-      <p>
-        React • JavaScript • Node.js • SQL • MongoDB • Python • ML • REST APIs • n8n
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="container contact">
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="container">
     <h2>Contact</h2>
 
     <p>
