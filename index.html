@@ -1,170 +1,141 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Mihika Maheshwari</title>
+  <meta charset="UTF-8">
+  <title>Mihika Maheshwari | Portfolio</title>
 
-	<!-- Normalize CSS -->
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
-	<!-- Custom Styles -->
-	<link href="styles.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 
-	<meta name="description" content="Full-stack developer portfolio showcasing web apps, ML projects, and automation systems.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Full-stack developer portfolio showcasing web, ML, DBMS and automation projects.">
 </head>
 
 <body>
 
-<header class="primary">
-	<div class="wrapper">
+<header>
+  <div class="container header-flex">
+    <div class="branding">
+      <h1>Mihika<span>.</span></h1>
+      <p>Full-Stack Developer</p>
+    </div>
 
-		<div class="logo-container">
-			<h1>Mihika<br>Maheshwari<br>Portfolio</h1>
-			<a href="index.html">
-				<img src="https://dummyimage.com/175/c4c4c4/fff&text=Logo" alt="logo" id="logo">
-			</a>
-		</div>
-
-		<nav id="mainnav">
-			<ul>
-				<li><a href="#work">Work</a></li>
-				<li><a href="#about-contact">About</a></li>
-				<li><a href="#about-contact">Contact</a></li>
-			</ul>
-		</nav>
-
-	</div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section id="work">
-	<div class="wrapper">
-		<h2>Selected Projects</h2>
-
-		<section class="featured">
-			<article>
-				<a href="https://financialcare.vercel.app/" target="_blank">
-					<img src="https://dummyimage.com/510x300/c4c4c4/fff&text=Financial+Care+Platform" alt="Financial Care">
-				</a>
-			</article>
-
-			<article>
-				<h3>Financial Care Platform</h3>
-				<h4>Problem Statement</h4>
-				<p>
-					Many first-time investors struggle to understand and manage mutual fund
-					investments through digital platforms.
-				</p>
-				<p>
-					I built a full-stack financial website with a clean UI and secure backend
-					to simplify onboarding and portfolio access.
-				</p>
-				<p>
-					<a href="https://financialcare.vercel.app/" target="_blank">
-						View Live Project
-					</a>
-				</p>
-			</article>
-		</section>
-
-		<section class="projects">
-
-			<article>
-				<h3>Phishing URL Detection System</h3>
-				<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Phishing+Detection" alt=""></a>
-				<p><strong>Role:</strong> ML Developer</p>
-				<p><strong>Description:</strong>
-					Bi-LSTM based system that classifies URLs into benign, phishing,
-					malware, and defacement without opening the link.
-				</p>
-			</article>
-
-			<article>
-				<h3>Hotel Room Booking System</h3>
-				<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Hotel+Booking" alt=""></a>
-				<p><strong>Role:</strong> Backend & DB Designer</p>
-				<p><strong>Description:</strong>
-					DBMS project handling room availability, bookings, customers,
-					and payment records using SQL.
-				</p>
-			</article>
-
-			<article>
-				<h3>In-Memory Cache Management System</h3>
-				<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=LRU+Cache" alt=""></a>
-				<p><strong>Role:</strong> System Designer</p>
-				<p><strong>Description:</strong>
-					OOAD-based cache system implementing LRU eviction policy
-					with modular components.
-				</p>
-			</article>
-
-			<article>
-				<h3>LMS Automation System</h3>
-				<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Automation" alt=""></a>
-				<p><strong>Role:</strong> Automation Developer</p>
-				<p><strong>Description:</strong>
-					Automated course and video sync between Google Drive
-					and Tutor LMS using n8n workflows.
-				</p>
-			</article>
-
-		</section>
-	</div>
+<section class="hero">
+  <div class="container">
+    <h2>Building <span>Real Systems</span>, Not Just Assignments.</h2>
+    <p>Web • Machine Learning • Automation • Databases</p>
+  </div>
 </section>
 
-<section id="about-contact" class="secondary">
-	<div class="wrapper">
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
 
-		<div class="profile-photo">
-			<img src="http://placehold.it/260?text=Mihika" alt="Mihika">
-		</div>
+    <div class="grid">
 
-		<article>
-			<h2>About Me</h2>
-			<p>
-				I am a full-stack developer with strong interests in web development,
-				automation, and applied machine learning. I enjoy building practical,
-				scalable systems that solve real-world problems.
-			</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="">
+        <div class="card-body">
+          <h3>Financial Care Platform</h3>
+          <p>Full-stack investment platform simplifying mutual fund access.</p>
+          <a href="https://financialcare.vercel.app/" target="_blank">View Live →</a>
+        </div>
+      </div>
 
-			<h3>Skills</h3>
-			<p>
-				React, Redux, JavaScript, Node.js, HTML, CSS, SQL, MongoDB,
-				Python, Machine Learning basics, REST APIs, Automation (n8n)
-			</p>
-		</article>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="">
+        <div class="card-body">
+          <h3>Phishing URL Detection</h3>
+          <p>Bi-LSTM based ML system detecting malicious URLs.</p>
+        </div>
+      </div>
 
-		<article>
-			<h2>Contact Me</h2>
-			<p>
-				I’m open to internships, project collaborations, and development roles.
-				Feel free to reach out.
-			</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+        <div class="card-body">
+          <h3>Hotel Booking System</h3>
+          <p>DBMS project managing rooms, bookings & customers.</p>
+        </div>
+      </div>
 
-			<p>
-				<i class="fa fa-envelope"></i>
-				<a href="mailto:pavikabra123@gmail.com">pavikabra123@gmail.com</a><br>
-				<i class="fa fa-phone"></i> +91 96806 10105
-			</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+        <div class="card-body">
+          <h3>In-Memory Cache System</h3>
+          <p>OOAD-based LRU cache with modular architecture.</p>
+        </div>
+      </div>
 
-			<p class="social">
-				<a href="#"><i class="fab fa-linkedin"></i></a>
-				<a href="#"><i class="fab fa-github"></i></a>
-				<a href="#"><i class="fab fa-twitter-square"></i></a>
-			</p>
-		</article>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+        <div class="card-body">
+          <h3>LMS Automation</h3>
+          <p>Automated Google Drive → Tutor LMS sync using n8n.</p>
+        </div>
+      </div>
 
-	</div>
+    </div>
+  </div>
 </section>
 
-<footer class="primary">
-	<div class="wrapper">
-		<p class="centered">© 2026 Mihika Maheshwari. All rights reserved.</p>
-	</div>
+<section id="about" class="section light">
+  <div class="container about-flex">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="profile">
+
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I am a full-stack developer who enjoys building scalable systems
+        involving web technologies, automation, databases, and machine learning.
+        I focus on clean architecture and real-world usability.
+      </p>
+
+      <h3>Skills</h3>
+      <p>
+        React • JavaScript • Node.js • SQL • MongoDB • Python • ML • REST APIs • n8n
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact">
+    <h2>Contact</h2>
+
+    <p>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:pavikabra123@gmail.com">pavikabra123@gmail.com</a>
+    </p>
+
+    <p>
+      <i class="fas fa-phone"></i>
+      +91 96806 10105
+    </p>
+
+    <div class="icons">
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mihika Maheshwari</p>
 </footer>
 
 </body>
